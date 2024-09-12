@@ -18,12 +18,12 @@ public:
 	//ExampleStackInterface Begin
 	virtual void Push_Implementation(int32 Data) override;
 
-	virtual int32 Pop_Implementation()override;
+	//virtual int32 Pop_Implementation()override;
 	//ExampleStackInterface End
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Stack")
 	TArray<int32> IntegerStack;
 
-	UFUNCTION(BlueprintCallable)
-	void PrintStack();
+	//UFUNCTION(BlueprintCallable)
+	//void PrintStack();
 };

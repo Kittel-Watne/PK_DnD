@@ -17,16 +17,16 @@ int32 UExampleQueue::Dequeue_Implementation()
 	{
 		DequeueData = IntegerQueue[0];
 		IntegerQueue.RemoveAt(0);
-		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Cyan, FString::Printf("Dequeue: %d", DequeueData));
+		//GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Cyan, FString::Printf("Dequeue: %d", DequeueData));
 	}
 
-	GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Cyan, FString::Printf("ExampleQueue is empty."));
+	//GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Cyan, FString::Printf("ExampleQueue is empty."));
 
 	return int32();
 }
 
 void UExampleQueue::QueuePrint()
 {
-	for (auto& Data : IntegerQueue )
-		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Cyan, FString::Printf("%d",Data));
+	for (auto& Data : IntegerQueue ){}
+		//GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Cyan, FString::Printf("%d",Data));
 }
