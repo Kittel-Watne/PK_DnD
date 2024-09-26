@@ -7,6 +7,7 @@
 #include "UObject/NoExportTypes.h"
 #include "CreatedList.generated.h"
 
+
 /**
  * 
  */
@@ -35,4 +36,17 @@ public:
 	UCreatedNode* DeleteWithValue(FString Value);
 	UFUNCTION(BlueprintCallable, Category = "ListObject")
 	bool PrintList();
+
+	/*
+	 *26.09.2024
+	 */
+
+	UFUNCTION(BlueprintCallable, Category = "ListObject")
+	bool BubbleSort();
+	UFUNCTION(BlueprintCallable, Category = "ListObject")
+	int32 GetDepth();
+	UFUNCTION(BlueprintCallable, Category = "ListObject")
+	bool IsSorted();
+	UFUNCTION(BlueprintCallable, Category = "ListObject")
+	bool MiracleSort();
 };
